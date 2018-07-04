@@ -1,0 +1,15 @@
+{
+  "name": "[DB] Forte",
+  "version": "1.0.0",
+  "description": "Multiserver scrim bot",
+  "main": "bot.js",
+  "author": "VLV",
+  "scripts": {
+    "start": "node bot.js" 
+  },
+  "dependencies": {
+    "discord.io": "^2.5.3",
+    "discord.js": "^11.2.1",
+    "winston": "^2.4.0"
+  }
+}
