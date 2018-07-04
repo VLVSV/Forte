@@ -5,15 +5,15 @@ const prefix = "/";
 
 //Object that keeps track of servers and their invite links
 var servers = {
-  TeamDawnbreakers: "https://discord/gg/BjeFkVS",
+  TeamDawnbreakers: "https://discord.gg/BjeFkVS",
   BotTest: "TEST SERVER",
-  TeamOmnibus: "https://discord/gg/7NPwyPr",
-  TeamRevelation: "https://discord/gg/5nmVDsV",
-  TeamTwilightKnights: "https://discord/gg/uqms9he",
-  TeamDisastra: "https://discord/gg/jwKybw6",
-  CpVirtuosos: "https://discord/gg/q5jJv2t",
-  ManaSurge: "https://discord/gg/nWNmF2R",
-  HallowedSkySV: "https://discord/gg/bbkhZfU"
+  TeamOmnibus: "https://discord.gg/7NPwyPr",
+  TeamRevelation: "https://discord.gg/5nmVDsV",
+  TeamTwilightKnights: "https://discord.gg/uqms9he",
+  TeamDisastra: "https://discord.gg/jwKybw6",
+  CpVirtuosos: "https://discord.gg/q5jJv2t",
+  ManaSurge: "https://discord.gg/nWNmF2R",
+  HallowedSkySV: "https://discord.gg/bbkhZfU"
 }
 
 //List of server IDs
@@ -47,15 +47,15 @@ client.on("message", (message) => {
 
   //Display the current people who are LFS along with their info
   if (message.content.startsWith(prefix + "board")) {
-    var msg = "Note: to accept an invite to a discord server replace discord/gg with discord.gg\n";
+    var msg = "";
     for(var userID in board) {
       msg += client.users.get(userID).username + board[userID] + "\n";
     }
-    if(msg === "Note: to accept an invite to a discord server replace discord/gg with discord.gg\n") {
-      message.channel.send("Sorry, it doesn't look like anybody else is looking for a scrim right now. How about you put yourself up there with /lfs");
+    if(msg === "") {
+      message.author.send("Sorry, it doesn't look like anybody else is looking for a scrim right now. How about you put yourself up there with /lfs");
     }
     else {
-      message.channel.send(msg);
+      message.author.send(msg);
     }
   }
 
