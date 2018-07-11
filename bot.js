@@ -14,12 +14,13 @@ var servers = {
   CpVirtuosos: "https://discord.gg/q5jJv2t",
   ManaSurge: "https://discord.gg/nWNmF2R",
   HallowedSkySV: "https://discord.gg/bbkhZfU",
-  KoreGaming: "https://discord.gg/PJX3HJs"
+  KoreGaming: "https://discord.gg/PJX3HJs",
+  ShadowverseNewbies: "https://discord.gg/BrJehpA"
 }
 
 //List of server IDs
 var serverIDs = ["398346811020017684", "364185073165008897", "110072744938307584", "366052303943237642", "410922043819819008", "327603763009290240",
-                 "267186445121355787", "270432049599348737", "302976037929746442", "451851155556007966"];
+                 "267186445121355787", "270432049599348737", "302976037929746442", "451851155556007966", "434815985028038686"];
 
 //Object that keeps track of user ids and their LFS info
 var board = new Object();
