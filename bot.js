@@ -47,6 +47,7 @@ client.on("message", (message) => {
   if (!message.content.startsWith(prefix)) return;
   if (message.author.bot) return;
   if (message.channel.type !== "text") return;
+  if (message.guild.name === "Team Twilight Knights") return;
 
   //Display the current people who are LFS along with their info
   if (message.content.startsWith(prefix + "board")) {
