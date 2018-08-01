@@ -5,7 +5,7 @@ const prefix = "/";
 
 //Object that keeps track of servers and their invite links
 var servers = {
-  TeamDawnbreakers: "https://discord.gg/BjeFkVS",
+  DawnbreakersEsports: "https://discord.gg/BjeFkVS",
   BotTest: "TEST SERVER",
   TeamOmnibus: "https://discord.gg/7NPwyPr",
   TeamRevelation: "https://discord.gg/5nmVDsV",
