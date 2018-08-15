@@ -17,7 +17,7 @@ var servers = {
   KoreGaming: "https://discord.gg/PJX3HJs",
   ShadowverseNewbies: "https://discord.gg/BrJehpA",
   CộngĐồngShadowverseVietnam: "https://discord.gg/9g8HKaC",
-  TeamKurumi: "https://discord.gg/zAxyBuA"
+  KurumiMasterRace: "https://discord.gg/zAxyBuA"
 }
 
 //List of server IDs
