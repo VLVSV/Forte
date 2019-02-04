@@ -108,6 +108,11 @@ client.on("message", (message) => {
       }
     }
   }
+  
+  else if(message.content.startsWith(prefix + "dbtime")) {
+     var d = new Date();
+     message.channel.send("DB time is currently: " + d.getHours() + ":" + d.getMinutes());      
+  }
 
   //Displays all relevant commands and their usage
   else if(message.content.startsWith(prefix + "help")) {
