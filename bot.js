@@ -111,7 +111,7 @@ client.on("message", (message) => {
   
   else if(message.content.startsWith(prefix + "dbtime")) {
      var d = new Date();
-     message.channel.send("DB time is currently: " + d.getHours() + ":" + d.getMinutes());      
+     message.channel.send("DB time is currently: " + (d.getHours() + 16) % 24 + ":" + d.getMinutes());      
   }
 
   //Displays all relevant commands and their usage
