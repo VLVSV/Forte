@@ -50,7 +50,7 @@ client.on("message", (message) => {
   if (message.author.bot) return;
   if (message.channel.type !== "text") return;
   
-  if(message.content.toLowerCase().indexOf("anne") !== -1 && message.author.id.indexOf("211603633286938624") !== -1) {
+  if((message.content.toLowerCase().indexOf("strike") || message.content.toLowerCase().indexOf("anne") !== -1) && message.author.id.indexOf("211603633286938624") !== -1) {
     message.channel.send("You're gonna see what I'm made of!", {files: ["https://shadowverse-portal.com/image/card/en/C_900334040.png?20190218a"]});
   }
 
