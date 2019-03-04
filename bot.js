@@ -20,6 +20,8 @@ var servers = {
   KurumiMasterRace: "https://discord.gg/zAxyBuA"
 }
 
+var lawMode = false;
+
 //List of server IDs
 var serverIDs = ["398346811020017684", "364185073165008897", "110072744938307584", "366052303943237642", "410922043819819008", "327603763009290240",
                  "267186445121355787", "270432049599348737", "302976037929746442", "451851155556007966", "434815985028038686", "311798981598642177",
@@ -46,8 +48,16 @@ client.on("presenceUpdate", (oldMember, newMember) => {
 });
 
 client.on("message", (message) => {
-    if(message.content.toLowerCase().indexOf(" anne ") !== -1 && message.author.id.indexOf("211603633286938624") !== -1) {
+  if(message.channel.type == "dm") {
+    if(message.content.toLowerCase().indexOf("lawmode")) {
+      lawMode = !lawMode; 
+    }
+  }
+  if(message.content.toLowerCase().indexOf(" anne ") !== -1 && message.author.id.indexOf("211603633286938624") !== -1) {
     message.channel.send("You're gonna see what I'm made of!", {files: ["https://shadowverse-portal.com/image/card/en/C_900334040.png"]});
+  }
+  if(lawMode && message.author.id.indexOf("232040363957813248") !== -1) {
+    message.channel.send("Bad law", {files : ["https://i.imgur.com/Iquo8NI.png"]}); 
   }
   if (!message.content.startsWith(prefix)) return;
   if (message.author.bot) return;
