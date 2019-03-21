@@ -56,6 +56,7 @@ client.on("message", (message) => {
   if(message.channel.type == "dm") {
     if(message.content.toLowerCase().indexOf("lawmode") !== -1) {
       lawMode = !lawMode; 
+      message.channel.send("Got it");
     }
   }
   if(message.content.toLowerCase().indexOf(" anne ") !== -1 && message.author.id.indexOf("211603633286938624") !== -1) {
