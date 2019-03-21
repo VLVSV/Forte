@@ -49,7 +49,6 @@ client.on("presenceUpdate", (oldMember, newMember) => {
 
 client.on("message", (message) => {
   if(message.channel.type == "dm") {
-    message.channel.send(message.content.toLowerCase().indexOf("lawmode"));
     if(message.content.toLowerCase().indexOf("lawmode") !== -1) {
       lawMode = !lawMode; 
       message.channel.send("Got it");
