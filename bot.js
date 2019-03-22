@@ -57,7 +57,7 @@ client.on("message", (message) => {
   if(message.content.toLowerCase().indexOf(" anne ") !== -1 && message.author.id.indexOf("211603633286938624") !== -1) {
     message.channel.send("You're gonna see what I'm made of!", {files: ["https://shadowverse-portal.com/image/card/en/C_900334040.png"]});
   }
-  if(lawMode && message.author.id.indexOf("232040363957813248") !== -1) {
+  if(lawMode && message.author.id.indexOf("482383616295305247") !== -1) {
     message.channel.send("Bad law", {files : ["https://i.imgur.com/Iquo8NI.png"]}); 
   }
   if (!message.content.startsWith(prefix)) return;
