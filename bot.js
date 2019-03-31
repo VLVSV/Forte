@@ -58,7 +58,7 @@ client.on("message", (message) => {
     message.channel.send("You're gonna see what I'm made of!", {files: ["https://shadowverse-portal.com/image/card/en/C_900334040.png"]});
   }
   if(lawMode && message.author.id.indexOf("482383616295305247") !== -1) {
-    message.channel.send("Bad law", {files : ["https://i.imgur.com/Iquo8NI.png"]}); 
+    message.channel.send("Merry April Fools!", {files : ["https://i.imgur.com/Iquo8NI.png"]}); 
   }
   if (!message.content.startsWith(prefix)) return;
   if (message.author.bot) return;
