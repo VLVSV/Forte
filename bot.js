@@ -20,7 +20,7 @@ var servers = {
   KurumiMasterRace: "https://discord.gg/zAxyBuA"
 }
 
-var lawMode = false;
+var lawMode = true;
 
 //List of server IDs
 var serverIDs = ["398346811020017684", "364185073165008897", "110072744938307584", "366052303943237642", "410922043819819008", "327603763009290240",
@@ -49,8 +49,8 @@ client.on("presenceUpdate", (oldMember, newMember) => {
 
 client.on("message", (message) => {
   if(message.channel.type == "dm") {
-    if(message.content.toLowerCase().indexOf("lawmode") !== -1) {
-      lawMode = !lawMode; 
+    if(message.content.toLowerCase().indexOf("pepega") !== -1) {
+      lawMode = !lawmode; 
       message.channel.send("Got it");
     }
   }
