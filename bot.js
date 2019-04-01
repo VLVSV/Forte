@@ -49,7 +49,7 @@ client.on("presenceUpdate", (oldMember, newMember) => {
 
 client.on("message", (message) => {
   if(message.channel.type == "dm") {
-    if(message.content.toLowerCase().indexOf("pepega") !== -1) {
+    if(message.content.toLowerCase().indexOf("lawmode") !== -1) {
       lawMode = !lawmode; 
       message.channel.send("Got it");
     }
